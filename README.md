@@ -1,9 +1,15 @@
 Research Impact Analysis in Africa
 Project Overview
-
 This project investigates scientific research output and impact across African countries using machine learning techniques and bibliometric analysis. The study evaluates publication productivity, citation performance, collaboration trends, and dominant research themes using data extracted from the Scopus citation database (2013–2022).
 
 The project was developed as part of an MSc Data Science dissertation and demonstrates the application of unsupervised machine learning techniques to research analytics and scientometrics.
+
+Project Summary
+This project presents a machine learning framework for evaluating research output and impact across Africa using bibliometric data from the Scopus citation database. Scientific publications produced between 2013 and 2022 were analysed to identify research productivity patterns, citation impact, collaboration trends, and dominant research themes.
+
+Using DBSCAN clustering and Latent Dirichlet Allocation (LDA) topic modelling, the project explored alternative approaches for assessing regional research impact beyond traditional bibliometric indicators.
+
+The framework was designed to support evidence-based decision-making by academic institutions, policymakers, and funding agencies seeking to understand research productivity and collaboration across Africa.
 
 Research Objectives
 Assess regional research productivity across Africa.
@@ -12,60 +18,79 @@ Identify collaboration patterns among countries.
 Discover dominant research themes.
 Generate evidence-based insights for policymakers, funding agencies, and academic institutions.
 Dataset
+Source
+Scopus Citation Database
 
-Source: Scopus Bibliometric Database
+Period
+2013–2022
 
-Period: 2013–2022
-
-Variables Included:
-
-Publication counts
+Dataset Characteristics
+Publication records
 Citation counts
 Country affiliations
 Collaboration indicators
 Research subject areas
 Author metadata
+Research abstracts
+Following data cleaning and preprocessing, the final dataset contained publications suitable for clustering and topic modelling analysis.
+
 Methodology
+Data Collection
+Publication metadata and abstracts were retrieved from the Scopus citation database and prepared for analysis.
+
 Data Preprocessing
 Data cleaning
+Duplicate removal
 Missing value treatment
 Feature engineering
-Normalisation
-Machine Learning Techniques
+Data normalisation
+Text preprocessing
 DBSCAN Clustering
+Density-Based Spatial Clustering of Applications with Noise (DBSCAN) was used to identify research performance clusters and uncover patterns within the publication dataset.
 
-Used to identify country-level research performance clusters based on publication and citation metrics.
+Topic Modelling
+Latent Dirichlet Allocation (LDA) was applied to publication abstracts and keywords to identify dominant research themes and emerging topics.
 
-Latent Dirichlet Allocation (LDA)
-
-Applied to research abstracts and keywords to detect dominant thematic areas in African research.
+Statistical Analysis
+Additional statistical techniques were used to explore relationships between publication volume, citation impact, and regional research performance.
 
 Tools and Technologies
 Python
 Pandas
 NumPy
 Scikit-learn
-NLTK
 Gensim
+NLTK
 Matplotlib
 Seaborn
 Jupyter Notebook
 Key Findings
-Significant disparities exist between publication volume and citation impact.
-Egypt and Tanzania demonstrated strong citation efficiency.
-Distinct regional collaboration clusters emerged.
-Topic modelling identified key thematic research areas across the continent.
+Significant disparities exist between publication volume and citation impact across African countries.
+South Africa produced the highest publication output in the dataset.
+Egypt demonstrated exceptionally strong citation efficiency.
+Tanzania achieved notable citation impact relative to publication volume.
+Distinct regional collaboration patterns emerged through clustering analysis.
+Topic modelling revealed health-related and societal research themes as dominant areas of influence.
+Strong relationships were observed between publication productivity and citation performance.
 Skills Demonstrated
 Machine Learning
-Clustering Analysis
-Topic Modelling
-Research Analytics
+Unsupervised Learning
+DBSCAN Clustering
+Topic Modelling (LDA)
+Natural Language Processing
 Bibliometric Analysis
-Data Visualization
-Python Programming
+Research Analytics
+Data Mining
 Statistical Analysis
-Author
-
-Derek Ahamioje
-
-Data Scientist | Research Analytics Specialist | Published Researcher
+Data Visualisation
+Python Programming
+Repository Structure
+research-impact-analysis-africa
+│
+├── data
+├── images
+├── notebooks
+├── reports
+├── README.md
+├── requirements.txt
+└── .gitignore
