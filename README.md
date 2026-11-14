@@ -78,6 +78,15 @@ Jupyter Notebook
 * Topic modelling revealed health-related and societal research themes as dominant areas of influence.
 * Strong relationships were observed between publication productivity and citation performance.
 
+**Project Outputs**
+The project generated visual insights into:
+
+* Publication trends across African countries
+* Citation impact and citation efficiency
+* Research collaboration patterns
+* DBSCAN research clusters
+* Dominant research topics identified through LDA topic modelling
+
 **Skills Demonstrated**
 Machine Learning
 Unsupervised Learning
